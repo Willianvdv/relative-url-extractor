@@ -1,6 +1,6 @@
 require 'open-uri'
 
-file = open(ARGV[0]).read
+file = URI.open(ARGV[0]).read
 
 EXCERPT_FORMAT = "------------------------------------------------\r\n%s\r\n"
 
